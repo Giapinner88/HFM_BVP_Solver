@@ -66,6 +66,7 @@ y' = \cos(\theta)
 $$
 
 Boundary conditions:
+
 $$
 \begin{cases}
 x(0)=0,\ y(0)=0,\ \theta(0)=0 \\
@@ -78,7 +79,7 @@ We solve this numerically using `scipy.integrate.solve_bvp`, a collocation-based
 ---
 
 ## File Structure
-
+```
 continuum-bvp/
 ├── README.md
 ├── solver/
@@ -86,7 +87,7 @@ continuum-bvp/
 ├── examples/
 │ └── plot_example.py
 └── requirements.txt
-
+```
 ## Setting up
 
 ```bash
@@ -98,8 +99,8 @@ from hfm_solver import solve_hfm
 import matplotlib.pyplot as plt
 
 # Tham số
-L = 1.0          # chiều dài beam (m)
-EI = 1.0         # độ cứng uốn (N⋅m²)
+L = 1.0          # beam legnth(m)
+EI = 1.0         # torision stiffness (N⋅m²)
 w = [0.5, 0, 0]  # [f_x, f_y, m_t]
 
 # Giải
@@ -114,6 +115,6 @@ plt.show()
 
 ## Author
 
-Giap Nguyen
-Department of School of Mechanical Engineering
+Giap Nguyen Trong,
+Department of School of Mechanical Engineering,
 Hanoi University of Science and Technology
